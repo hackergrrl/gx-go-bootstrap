@@ -11,7 +11,7 @@ gx-go_bin=bin/gx-go-v1.2.0
 export PATH := bin:$(PATH)
 export IPFS_API ?= v04x.ipfs.io
 
-all: help
+help: help
 
 go_check:
 	@bin/check_go_version $(IPFS_MIN_GO_VERSION)
@@ -42,8 +42,8 @@ build: deps
 clean:
 	go clean
 
-PHONY += all help gx_check
-PHONY += go_check deps install build nofuse clean uninstall
+PHONY += help gx_check
+PHONY += go_check deps install build clean
 
 ##############################################################
 # A semi-helpful help message
@@ -56,7 +56,7 @@ help:
 	@echo ''
 	@echo 'BUILD TARGETS:'
 	@echo ''
-	@echo '  all          - print this help message'
+	@echo '  help         - Print this help message'
 	@echo '  build        - Build binary'
 	@echo '  install      - Build binary and install into $$GOPATH/bin'
 	@echo ''
