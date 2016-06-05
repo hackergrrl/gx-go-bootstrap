@@ -49,7 +49,7 @@ func main() {
 			}
 
 			// Write the bytes
-			err = ioutil.WriteFile(writeName, bytes, 0644)
+			err = ioutil.WriteFile(writeName, bytes, 0744)
 			if err != nil {
 				fmt.Fprintln(os.Stderr, err)
 				os.Exit(1)
