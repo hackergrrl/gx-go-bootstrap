@@ -40,10 +40,7 @@ build: deps
 	go build
 
 clean:
-	rm -rf ./ipget
-
-uninstall:
-	go clean github.com/ipfs/ipget
+	go clean
 
 PHONY += all help gx_check
 PHONY += go_check deps install build nofuse clean uninstall
