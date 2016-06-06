@@ -3,7 +3,7 @@
 > Generate bootstrapping scripts for gx projects written in Go
 
 
-[Gx](https://github.com/whyrusleeping/gx) is a package manager build on
+[gx](https://github.com/whyrusleeping/gx) is a package manager build on
 [IPFS][]. Go projects can use [gx-go](https://github.com/whyrusleeping/gx-go) to
 manage their dependencies.
 
